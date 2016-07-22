@@ -81,7 +81,8 @@ All text above, and the splash screen must be included in any redistribution
   #error "Only one SSD1306 display can be specified at once"
 #endif
 #if !defined SSD1306_128_64 && !defined SSD1306_128_32 && !defined SSD1306_96_16
-  #error "At least one of SSD1306_128_64, SSD1306_128_32 or SSD1306_96_16 must be specified"
+//  #error "At least one of SSD1306_128_64, SSD1306_128_32 or SSD1306_96_16 must be specified"
+  #define SSD1306_128_32
 #endif
 
 #if defined SSD1306_128_64
